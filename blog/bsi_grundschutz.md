@@ -79,25 +79,26 @@ Or
 severity: high
 ```
 
-For further reading on those concepts you might check or the following blog:
-https://www.opensourcerers.org/2021/10/11/rhacm-and-policies-more-details/
+For further reading on those concepts you might check or the following [blog](https://www.opensourcerers.org/2021/10/11/rhacm-and-policies-more-details/)
 or the [Kubernetes Policy Workgroup White Paper](https://github.com/kubernetes/sig-security/blob/main/sig-security-docs/papers/policy/CNCF_Kubernetes_Policy_Management_WhitePaper_v1.pdf)
-https://cloud.redhat.com/blog/generating-governance-policies-using-kustomize-and-gitops
 
 
 ### Administrative Tasks/Preparation
 
 As a start of the Process a RHACM/OpenShift/Kubernetes-Administrator is providing the necessary resources and necessary configuration-files which can be used as an input for generating the desired results. In the following we follow a git/gitops-based approach
 based on the below examples 
+
 https://github.com/ch-stark/maptoseveralstandards/tree/main/config/input
+
 
 This initial provisioning of input resources can/should have redundancy as we will later select only some parts for our Policies
 
-Selection of Compliance-Standard and Technology-Selection
-Selection of Compliance-Standard
+## Selection of Compliance-Standard and Technology-Selection
+
+### Selection of Compliance-Standard
 
 Once the input has been finalized a Compliance-Officer/Security-Architect is selecting the Compliance-Standard which fits best the Organization. Often this standard is coming from Industry or Governance requirements.
-.
+
 In this blog we use the following Documents as source for the standard and its implementation.:
 
 bsi grundschutz openshift
@@ -153,8 +154,8 @@ Use of meta information on the namespaces to support organizational aspects ([LA
 Organizational
 Definition of clear development and deployment guidelines for the use of the architecturally, configurationally and operationally prepared separations
 
-Red Hat Advanced Cluster Management for Kubernetes is used for the central management of the OpenShift Container Platform cluster and helps to implement the organizational protective measures by automating the configuration.
-Red Hat Advanced Cluster Security for Kubernetes allows policy-based compliance checking on the OpenShift Container Platform clusters.
+`Red Hat Advanced Cluster Management for Kubernetes` is used for the central management of the OpenShift Container Platform cluster and helps to implement the organizational protective measures by automating the configuration.
+`Red Hat Advanced Cluster Security for Kubernetes` allows policy-based compliance checking on the OpenShift Container Platform clusters.
 
 ### APP.4.4.M2 Planing auf Automation using CI/CD (B)
 
