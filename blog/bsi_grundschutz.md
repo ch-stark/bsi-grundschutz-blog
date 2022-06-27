@@ -76,8 +76,15 @@ severity: medium
 Or
 
 ```
-severity: high
+severity: high or critical
 ```
+Note:
+  https://cloud.redhat.com/blog/using-policyreports-to-view-and-alert-for-governance-violations
+
+In order to alert on any violations produced by a policy, set the severity of the policy to critical and follow the steps previously outlined in in the alerting blog to set up alerting on your cluster.
+
+
+
 
 For further reading on those concepts you might check or the following [blog](https://www.opensourcerers.org/2021/10/11/rhacm-and-policies-more-details/)
 or the [Kubernetes Policy Workgroup White Paper](https://github.com/kubernetes/sig-security/blob/main/sig-security-docs/papers/policy/CNCF_Kubernetes_Policy_Management_WhitePaper_v1.pdf)
